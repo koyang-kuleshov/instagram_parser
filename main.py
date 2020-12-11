@@ -10,6 +10,7 @@ if __name__ == "__main__":
     crawler_settings.setmodule(settings)
     crawler_proc = CrawlerProcess(settings=crawler_settings)
 
-    crawler_proc.crawl(InstagramSpider, login, passwd, ['reaninja'])
+    # Заменить natgeo на нужный профиль
+    crawler_proc.crawl(InstagramSpider, login, passwd, ['natgeo'])
 
     crawler_proc.start()
